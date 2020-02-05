@@ -34,4 +34,17 @@ image for local docker resgitry:
 	For delete some you can run this command:
 
 		<code>kubectl delete pod POD_NAME</code>
+
+	If necessary you could forwad request port using the following command:
+	
+		<code>kubectl port-forward deploy/APP_NAME INCOMING_PORT:OUTCOMING_PORT</code>
+
+		<code>kubectl port-forward deploy/demo 9999:8888</code>
+	
+	To check the exists pod running run the following command:
+
+		<code>kubectl get pods --selector app=NAME_APP</code>
+
+		<code>kubectl get pods --selector app=demo</code>
+		
 </p>
