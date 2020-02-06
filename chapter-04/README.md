@@ -68,6 +68,7 @@ NewReplicaSet:   demo-8c7f9656b (1/1 replicas created)
 Events:          none
 </code>
 
+
 <p>
 It's an important subject is <i>kubectl run</i> not create a pod, this command create Deployment object and Deployment object started the pod.
 The deployment is a declarion of the wanted state.
