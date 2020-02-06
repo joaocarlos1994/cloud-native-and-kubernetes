@@ -34,7 +34,7 @@ Pod is a Kubernetes object that represents a group of one or more containers.
 </p>
 
 <p>
-The speficiation of <i>Image</i> in this case is DOCKER_ID/IMAGE_NAME join with port number, is the information for Deployment start the pode maintain it in alive. Example of deployment object below:
+The speficiation of <i>Image</i> in this case is DOCKER_ID/IMAGE_NAME join with port number, is the information for Deployment start the pod and maintain it in alive. Example of deployment object below:
 </p>
 
 <code>
