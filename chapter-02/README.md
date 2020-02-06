@@ -5,6 +5,7 @@
 	Some scratch means from zero.
 	For create some image run the following code:
 </p>
+
 		<code>docker image build -t first-image .</code>
 
 <p>
@@ -26,29 +27,35 @@ image for local docker resgitry:
 <p>
 	To send this image for docker hub run the following image:
 </p>
+
 		<code>docker image push YOUR_DOCKER_ID/IMAGE_NAME</code>
 
 <p>
 	For create a container inside cluster on Kuberts run the following command:
 </p>
+
 		<code>kubectl run demo --image=first-image --port=9999 --labels app=demo</code>
 
 <p>
 	Actually this command is depreacted , use this one 
 </p>
+
 		<code>kubectl run --generator=deployment/apps.v1 is DEPRECATED and will be removed in a future version. Use kubectl run --generator=run-pod/v1 or kubectl create instead.</code>
 
 <p>
 	For delete some you can run this command:
 </p>
+
 		<code>kubectl delete pod POD_NAME</code>
 
 <p>
 	If necessary you could forwad request port using the following command:
 </p>	
+
 		<code>kubectl port-forward deploy/APP_NAME INCOMING_PORT:OUTCOMING_PORT</code>
 
 		<code>kubectl port-forward deploy/demo 9999:8888</code>
+
 <p>	
 	To check the exists pod running run the following command:
 </p>
