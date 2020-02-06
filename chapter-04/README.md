@@ -55,17 +55,17 @@ Pod Template:
     Image:        joaocbatista/cloud-native-image
     Port:         9999/TCP
     Host Port:    0/TCP
-    Environment:  <none>
-    Mounts:       <none>
-  Volumes:        <none>
+    Environment:  none
+    Mounts:       none
+  Volumes:        none
 Conditions:
   Type           Status  Reason
   ----           ------  ------
   Available      True    MinimumReplicasAvailable
   Progressing    True    NewReplicaSetAvailable
-OldReplicaSets:  <none>
+OldReplicaSets:  none
 NewReplicaSet:   demo-8c7f9656b (1/1 replicas created)
-Events:          <none>
+Events:          none
 </code>
 
 <p>
