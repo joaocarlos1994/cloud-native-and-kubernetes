@@ -37,7 +37,7 @@ Pod is a Kubernetes object that represents a group of one or more containers.
 The speficiation of <i>Image</i> in this case is DOCKER_ID/IMAGE_NAME join with port number, is the information for Deployment start the pod and maintain it in alive. Example of deployment object below:
 </p>
 
-<code>
+```
 Name:                   demo
 Namespace:              default
 CreationTimestamp:      Wed, 05 Feb 2020 12:43:45 -0300
@@ -66,13 +66,10 @@ Conditions:
 OldReplicaSets:  none
 NewReplicaSet:   demo-8c7f9656b (1/1 replicas created)
 Events:          none
-</code>
+```
 
 
 <p>
 It's an important subject is <i>kubectl run</i> not create a pod, this command create Deployment object and Deployment object started the pod.
 The deployment is a declarion of the wanted state.
 </p>
-
-
-
